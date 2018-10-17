@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #ea5209 !important;
+}
+
+hr{
+  background-color: blue;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.container{
+  background-color: white;
+}
+
