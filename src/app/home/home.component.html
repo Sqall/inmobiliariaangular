@@ -1,0 +1,15 @@
+<app-carousel></app-carousel>
+<br>
+<h2 class="text-center"><i class="fas fa-home"></i> ¡Bienvenido!</h2>
+<h5>
+  Bienvenido/a a nuestro Sitio Web. En el podrá conocer con detalle y fotos nuestra oferta de inmuebles tanto a la Venta como en Alquiler. También tendrá la opción de comunicarse a nuestros teléfonos, fijo o celular, o hacernos llegar via mail para mas detalles de lo que necesite.
+</h5>
+<br>
+<br>
+<ul class="list-inline">
+    <app-item
+      *ngFor="let itemlist of homePropiedades; let i = index"
+      [item]="itemlist"
+      [index] = "i"
+      (click)="onSelect()"></app-item>
+</ul>

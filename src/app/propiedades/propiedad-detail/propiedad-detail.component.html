@@ -1,0 +1,23 @@
+<slideshow
+  [imageUrls]="listaimagenes"
+  [height]="'500px'"
+  [showArrows]="false"
+  [dotColor]="'#00F'"
+  [showDots]="true"
+  [backgroundRepeat]="true"
+  [stopAutoPlayOnSlide]="false">
+</slideshow>
+<h5><u>Direccion:</u> {{ item.direccion }}</h5>
+<h5><u>Precio:</u> {{ item.precio }}</h5>
+<hr>
+<h4><u>Descripcion</u></h4>
+<h5>{{ item.descripcion }}</h5>
+<br>
+<br>
+<div *ngIf="isAuthenticated()">
+  <button class="btn btn-primary btn-lg btn-block"(click)="onEdit()" >Editar</button>
+  <button class="btn btn-danger btn-lg btn-block"(click)="onDelete()">Borrar</button>
+</div>
+<br>
+<br>
+

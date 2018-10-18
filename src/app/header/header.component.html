@@ -1,0 +1,26 @@
+<div class="row portada">
+  <img id="portada" src="../../assets/Images/logo2.png" class="m-5" routerLink="/"/>
+</div>
+<div class="row">
+  <div class="col-lg-6">
+    <h5><i class="fas fa-phone"></i> 0249 4436672 - 154633127</h5>
+
+    <a routerLink="/aboutus" class="headerlink"><h5><i class="fas fa-map-marker-alt"></i> Av.Falucho 897</h5></a>
+  </div>
+  <div class="col-lg-6 text-right">
+    <a routerLink="/aboutus" class="headerlink"><h5>Sobre Nosotros <i class="fas fa-info"></i></h5></a>
+    <h5>hermangatti@hotmail.com <i class="fas fa-envelope"></i></h5>
+  </div>
+</div>
+<hr>
+<div class="navbar-default">
+  <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+    <ul class="navbar-nav">
+      <li *ngFor="let item of menu" class="nav-item nav-style mr-2" role="presentation" routerLinkActive="active">
+        <a class="nav-link" routerLink="{{item}}">{{ item | titlecase }}</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<button *ngIf="isAuthenticated()" type="button" class="logout btn btn-danger" (click)="logout()" >Logout</button>
+<hr>
