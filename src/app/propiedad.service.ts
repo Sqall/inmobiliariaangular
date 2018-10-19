@@ -9,7 +9,7 @@ import { AuthService } from './auth/auth.service';
 export class PropiedadService {
 
   private propiedad: Propiedad;
-  private dbUrl = 'http://localhost:3000/propiedades';
+  private dbUrl = 'https://inmobiliariabackend.herokuapp.com/propiedades';
   private token;
 
   constructor(
